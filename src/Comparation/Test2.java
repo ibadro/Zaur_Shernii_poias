@@ -18,7 +18,7 @@ public class Test2 {
         System.out.println("after sorting \n"+ List);
     }
 }
-class Employee implements Comparable<Employee>{
+class Employee implements Comparable<Employee> {
     int id;
     String name;
     String surname;
@@ -52,7 +52,8 @@ class Employee implements Comparable<Employee>{
 //        else {
 //            return 1;
 //        }
-       // return this.id- anotherEmp.id; // альтернативный вариант по id
+        // return this.id- anotherEmp.id; // альтернативный вариант по id
         // return this.id.compareTo(anotherEmp,id); // альтернативный вариант по id но придется инт переделывать в интеджер
         return this.name.compareTo(anotherEmp.name); // сортировка по имени функциональности compareTo
+    }
 }
